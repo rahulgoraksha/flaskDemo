@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1>Book Categories</h1>
+        <table>
+            <form action="/book_thriller" method="post">
+                <tr>
+                    <td><a href="{{url_for('thriller')}}">Thriller</a></td>
+                </tr>
+            </form>
+            <form action="/book_fiction" method="post">
+                <tr>
+                    <td><a href="{{url_for('fiction')}}">Fiction</a></td>
+                </tr>
+            </form>
+        </form>
+        <form action="/book_adult" method="post">
+            <tr>
+                <td><a href="{{url_for('adult')}}">Young Adults</a></td>
+            </tr>
+        </form>
+        </table>
+
+        <img src="{{url_for('static',filename='images/book1.jpeg')}}">
+    </body>
+</html>

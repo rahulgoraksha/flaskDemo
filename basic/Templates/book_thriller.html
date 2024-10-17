@@ -1,0 +1,51 @@
+<html>
+    <body>
+        <form action="/book_back" method="post">
+            <h2>Thriller</h2>
+            <table border="4">
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>price</th>
+                    <th>Age Group</th>
+                    <th>Description</th>
+                <tr>
+                <tr>
+                    <td><img src="{{url_for('static',filename='images/book1.jpeg')}}"</td>
+                    <td>Baby Book</td>
+                    <td>Julia Harris</td>
+                    <td>$10</td>
+                    <td>1+</td>
+                    <td>At about 1 year, babies will start using simple words, typically with a vocabulary of words. By reading books to your baby with simple vocabulary, you can help cement the words that they do know while also teaching them new ones.
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td><img src="{{url_for('static',filename='images/book2.jpeg')}}"</td>
+                    <td>Fiction Book</td>
+                    <td>Julia Harris</td>
+                    <td>$10</td>
+                    <td>10+</td>
+                    <td>the type of book or story that is written about imaginary characters and events and not based on real people and facts: work of fiction The book is a work of fiction and not intended as a historical account.
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="{{url_for('static',filename='images/book3.jpeg')}}"</td>
+                    <td>Travel Book</td>
+                    <td>Julia Harris</td>
+                    <td>$10</td>
+                    <td>15+</td>
+                    <td>A guide book or travel guide is "a book of information about a place, designed for the use of visitors or tourists".
+
+                    </td>
+                </tr>
+            </table>
+        <p>
+            <a href="{{url_for('back')}}">Back to book</a>
+        </p>
+        </form>
+
+    </body>
+</html>

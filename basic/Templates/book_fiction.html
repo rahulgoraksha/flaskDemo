@@ -1,0 +1,51 @@
+<html>
+    <body>
+        <form action="/book_back" method="post">
+            <h2>Fiction</h2>
+            <table border="4">
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>price</th>
+                    <th>Age Group</th>
+                    <th>Description</th>
+                <tr>
+                <tr>
+                    <td><img src="{{url_for('static',filename='images/fiction1.jpeg')}}"</td>
+                    <td>Science Book</td>
+                    <td>Robert Demon</td>
+                    <td>$40</td>
+                    <td>2+</td>
+                    <td>All about space and nature, where Science comes into picture.
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td><img src="{{url_for('static',filename='images/fiction2.jpeg')}}"</td>
+                    <td>Science Fiction Book</td>
+                    <td>Chris Harris</td>
+                    <td>$60</td>
+                    <td>15+</td>
+                    <td>Invension of Mother Earth
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="{{url_for('static',filename='images/fiction3.jpeg')}}"</td>
+                    <td>Experiment Book</td>
+                    <td>Amber Max</td>
+                    <td>$20</td>
+                    <td>18+</td>
+                    <td>Explore the New Day, with new Concept
+
+                    </td>
+                </tr>
+            </table>
+        <p>
+            <a href="{{url_for('back')}}">Back to book</a>
+        </p>
+        </form>
+
+    </body>
+</html>
